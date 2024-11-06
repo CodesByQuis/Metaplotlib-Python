@@ -1,0 +1,20 @@
+# Author: Marquis Jones
+# Date: 2024-11-06
+
+import matplotlib.pyplot as plt
+
+# Data for the bar plot
+categories = ['A', 'B', 'C', 'D', 'E']
+values = [10, 15, 7, 25, 12]
+
+# Creating the bar plot
+plt.figure(figsize=(8,6))
+plt.bar(categories, values, color='skyblue')
+
+# Adding titles and labels
+plt.title('Bar Plot Example')
+plt.xlabel('Categories')
+plt.ylabel('Values')
+
+# Show the plot
+plt.show()
