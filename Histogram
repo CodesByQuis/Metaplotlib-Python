@@ -1,0 +1,20 @@
+# Author: Marquis Jones
+# Date: 2024-11-06
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for the histogram
+data = np.random.randn(1000)
+
+# Creating the histogram
+plt.figure(figsize=(8,6))
+plt.hist(data, bins=30, color='purple', alpha=0.7)
+
+# Adding titles and labels
+plt.title('Histogram Example')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+
+# Show the plot
+plt.show()
