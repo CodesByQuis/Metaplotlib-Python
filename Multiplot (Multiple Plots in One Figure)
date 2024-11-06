@@ -1,0 +1,31 @@
+# Author: Marquis Jones
+# Date: 2024-11-06
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for plots
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+# Creating the multiplot
+fig, axs = plt.subplots(2, 1, figsize=(8, 10))  # Two plots in a single column
+
+# First plot: Sin Wave
+axs[0].plot(x, y1, label='Sin(x)', color='blue')
+axs[0].set_title('Sine Wave')
+axs[0].set_xlabel('X-axis')
+axs[0].set_ylabel('Y-axis')
+axs[0].legend()
+
+# Second plot: Cos Wave
+axs[1].plot(x, y2, label='Cos(x)', color='red')
+axs[1].set_title('Cosine Wave')
+axs[1].set_xlabel('X-axis')
+axs[1].set_ylabel('Y-axis')
+axs[1].legend()
+
+# Adjust layout and display the plots
+plt.tight_layout()
+plt.show()
