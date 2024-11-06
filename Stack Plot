@@ -1,0 +1,24 @@
+# Author: Marquis Jones
+# Date: 2024-11-06
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for the stack plot
+x = np.arange(1, 6)
+y1 = np.array([2, 3, 4, 5, 6])
+y2 = np.array([1, 2, 3, 4, 5])
+y3 = np.array([4, 5, 6, 7, 8])
+
+# Creating the stack plot
+plt.figure(figsize=(8,6))
+plt.stackplot(x, y1, y2, y3, labels=['Y1', 'Y2', 'Y3'], alpha=0.6)
+
+# Adding titles and labels
+plt.title('Stack Plot Example')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
+# Show the plot
+plt.legend(loc='upper left')
+plt.show()
